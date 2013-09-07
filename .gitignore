@@ -1,3 +1,6 @@
 # for phpstorm
 .idea
 .sass-cache
+
+# Compass symlink
+sass/compass
