@@ -8,3 +8,10 @@
  * @package    WordPress
  * @subpackage Hoho
  */
+
+/**
+ * 自動的にRSSフィードのリンクを挿入
+ *
+ * @since WordPress 3.0
+ */
+add_theme_support( 'automatic-feed-links' );
