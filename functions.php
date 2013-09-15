@@ -10,6 +10,14 @@
  */
 
 /**
+ * コンテンツエリアの最大許容幅を設定
+ *
+ * @since WordPress 2.6
+ */
+if ( ! isset( $content_width ) )
+	$content_width = 585;
+
+/**
  * 自動的にRSSフィードのリンクを挿入
  *
  * @since WordPress 3.0

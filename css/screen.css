@@ -69,6 +69,18 @@ body {
   margin: 0 5%;
 }
 
+/* =================
+ * WordPress Styles
+ * ================= */
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ===================
  *  ALL: Orange Theme
  * =================== */
