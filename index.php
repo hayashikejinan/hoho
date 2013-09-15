@@ -13,37 +13,42 @@
 
 get_header(); ?>
 
-<div class="main wrapper clearfix">
+<div class="wrapper clearfix">
 
-	<?php if ( have_posts() ) : ?>
-		<?php while ( have_posts() ) : the_post(); ?>
+	<div class="main clearfix">
 
-			<article <?php post_class(); ?>>
-				<header>
+		<?php if ( have_posts() ) : ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-					<h1><?php the_title(); ?></h1>
+				<article <?php post_class(); ?>>
+					<header>
 
-					<time><?php the_time( 'Y.n.j' ); ?></time>
+						<h1><?php the_title(); ?></h1>
 
-				</header>
-				<section>
+						<time><?php the_time( 'Y.n.j' ); ?></time>
 
-					<?php the_excerpt(); // 記事の抜粋を表示 ?>
+					</header>
+					<section>
 
-				</section>
-				<footer>
+						<?php the_excerpt(); // 記事の抜粋を表示 ?>
 
-					<?php the_category(); ?>
+					</section>
+					<footer>
 
-				</footer>
-			</article>
+						<?php the_category(); ?>
 
-		<?php endwhile; ?>
-	<?php endif; ?>
+					</footer>
+				</article>
+
+			<?php endwhile; ?>
+		<?php endif; ?>
+
+	</div>
+	<!-- #main -->
 
 	<?php get_sidebar(); ?>
 
 </div>
-<!-- #main -->
+<!-- #wrapper -->
 
 <?php get_footer(); ?>

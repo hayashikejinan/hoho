@@ -3,7 +3,7 @@
  * ====================
 
 .header-container,
-.main aside
+.sidebar aside
 	@include box-shadow(0 5px 10px #aaa)
 
 /* ============
@@ -22,9 +22,16 @@ nav
  * ============
 
 .main
+	float: left
+	width: 57%
 	article
-		float: left
-		width: 57%
+
+/* ===============
+ *  WIDE: Sidebar
+ * ===============
+
+.sidebar
+	float: right
+	width: 38%
 	aside
-		float: right
-		width: 28%
+		padding: 0 13% 10px

@@ -77,13 +77,13 @@ body {
 }
 
 .footer-container,
-.main aside {
+.sidebar aside {
   border-top: 20px solid #e44d26;
 }
 
 .header-container,
 .footer-container,
-.main aside {
+.sidebar aside {
   background: #f16529;
 }
 
@@ -118,13 +118,18 @@ nav a:hover {
 /* ==============
  *  MOBILE: Main
  * ============== */
-.main {
+.main-container {
   padding: 30px 0;
 }
+
 .main article h1 {
   font-size: 2em;
 }
-.main aside {
+
+/* =================
+ *  MOBILE: Sidebar
+ * ================= */
+.sidebar aside {
   color: white;
   padding: 0 5% 10px;
 }
@@ -163,7 +168,7 @@ nav a:hover {
    *  WIDE: CSS3 Effects
    * ==================== */
   .header-container,
-  .main aside {
+  .sidebar aside {
     -webkit-box-shadow: 0 5px 10px #aaaaaa;
     -moz-box-shadow: 0 5px 10px #aaaaaa;
     box-shadow: 0 5px 10px #aaaaaa;
@@ -184,13 +189,20 @@ nav a:hover {
   /* ============
    *  WIDE: Main
    * ============ */
-  .main article {
+  .main {
     float: left;
     width: 57%;
   }
-  .main aside {
+
+  /* ===============
+   *  WIDE: Sidebar
+   * =============== */
+  .sidebar {
     float: right;
-    width: 28%;
+    width: 38%;
+  }
+  .sidebar aside {
+    padding: 0 13% 10px;
   }
 }
 @media only screen and (min-width: 1140px) {
