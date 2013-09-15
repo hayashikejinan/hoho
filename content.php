@@ -19,6 +19,8 @@
 
 				<time><?php the_time( 'Y.n.j' ); ?></time>
 
+				<?php the_category(); ?>
+
 			</header>
 			<section>
 
@@ -27,7 +29,7 @@
 			</section>
 			<footer>
 
-				<?php the_category(); ?>
+				<?php the_tags(); ?>
 
 			</footer>
 		</article>
