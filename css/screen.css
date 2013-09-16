@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
  * Normalize
  * ========================================================================== */
@@ -61,7 +62,7 @@ textarea {
  * Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
  * ========================================================================== */
 body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  font: 16px/26px "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
 }
 
 .wrapper {
@@ -76,7 +77,8 @@ body {
   margin: 5px 20px 20px 0;
 }
 
-.aligncenter, div.aligncenter {
+.aligncenter,
+div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
@@ -166,6 +168,31 @@ a img.aligncenter {
 /* ===================
  *  ALL: Orange Theme
  * =================== */
+a {
+  color: #f16529;
+  text-decoration: none;
+}
+a:hover, a:visited {
+  color: #f16529;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+a,
+a img {
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+a:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+
 .header-container {
   border-bottom: 20px solid #e44d26;
 }
@@ -226,6 +253,16 @@ nav a:hover {
 .sidebar aside {
   color: white;
   padding: 0 5% 10px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: white;
+}
+.sidebar a:hover, .sidebar a:visited {
+  color: white;
+}
+.sidebar a:hover {
+  text-decoration: underline;
 }
 
 .widget {

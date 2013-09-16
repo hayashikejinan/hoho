@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea
-	color: #222
+	color: $base-font-color
 
 body
 	font-size: 1em
@@ -48,7 +48,7 @@ textarea
  * ==========================================================================
 
 body
-	font: 16px / 26px Helvetica, Helvetica Neue, Arial
+	font: 16px / 26px $font-family-maru-gothic
 
 .wrapper
 	width: 90%
@@ -61,7 +61,8 @@ body
 .alignnone
 	margin: 5px 20px 20px 0
 
-.aligncenter, div.aligncenter
+.aligncenter,
+div.aligncenter
 	display: block
 	margin: 5px auto 5px auto
 
@@ -123,7 +124,7 @@ a img
 	padding: 0
 
 .bypostauthor
-	background-color: #e44d26
+	background-color: $base-color-dark
 
 .size-auto,
 .size-full,
@@ -137,17 +138,34 @@ a img
  *  ALL: Orange Theme
  * ===================
 
+a
+	color: $link-color
+	text-decoration: none
+	&:hover,
+	&:visited
+		color: $link-color
+	&:hover
+		text-decoration: underline
+
+a,
+a img
+	@include transition(all 0.3s ease 0s)
+
+a:hover
+	img
+		@include opacity(0.8)
+
 .header-container
-	border-bottom: 20px solid #e44d26
+	border-bottom: 20px solid $base-color-dark
 
 .footer-container,
 .sidebar aside
-	border-top: 20px solid #e44d26
+	border-top: 20px solid $base-color-dark
 
 .header-container,
 .footer-container,
 .sidebar aside
-	background: #f16529
+	background: $base-color
 
 .title
 	color: white
@@ -168,7 +186,7 @@ nav
 		text-decoration: none
 		font-weight: bold
 		color: white
-		background: #e44d26
+		background: $base-color-dark
 		&:hover,
 		&:visited
 			color: white
@@ -194,6 +212,14 @@ nav
 	aside
 		color: white
 		padding: 0 5% 10px
+	a
+		text-decoration: none
+		color: white
+		&:hover,
+		&:visited
+			color: white
+		&:hover
+			text-decoration: underline
 
 .widget
 	margin: 0 0 30px
