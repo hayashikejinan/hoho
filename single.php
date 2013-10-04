@@ -16,6 +16,10 @@ get_header(); ?>
 		// content.php を読み込む
 		get_template_part( 'content' ); ?>
 
+		<div class="page-links">
+			<?php wp_link_pages(); // 記事内ページャー ?>
+		</div>
+
 	</div>
 	<!-- #main -->
 
