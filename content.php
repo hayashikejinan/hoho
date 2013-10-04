@@ -15,7 +15,11 @@
 		<article <?php post_class(); ?>>
 			<header>
 
-				<h1><?php the_title(); ?></h1>
+				<h1>
+					<a href="<?php the_permalink(); ?>">
+						<?php the_title(); ?>
+					</a>
+				</h1>
 
 				<time><?php the_time( 'Y.n.j' ); ?></time>
 
