@@ -24,7 +24,11 @@
 			</header>
 			<section>
 
-				<?php the_excerpt(); // 記事の抜粋を表示 ?>
+				<?php if ( is_singular() ) : ?>
+					<?php the_content(); // 記事を表示 ?>
+				<?php else: ?>
+					<?php the_excerpt(); // 記事の抜粋を表示 ?>
+				<?php endif; ?>
 
 			</section>
 			<footer>
