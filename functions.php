@@ -67,7 +67,12 @@ if ( ! function_exists( 'hoho_setup' ) ):
 		add_theme_support( 'post-thumbnails' );
 
 		// メニューを登録
-		register_nav_menu( 'primary', 'ヘッダーのメニュー' );
+		register_nav_menus(
+			array(
+				'primary'   => 'ヘッダーのメニュー',
+				'secondary' => 'フッターのメニュー',
+			)
+		);
 
 	}
 
