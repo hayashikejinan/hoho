@@ -27,6 +27,9 @@ if ( ! function_exists( 'hoho_setup' ) ):
 	 */
 	function hoho_setup() {
 
+		// ビジュアルエディタ用の css 読み込み
+		add_editor_style( 'css/screen.css' );
+
 		// 投稿・コメントページで自動的にRSSフィードのリンクを <head> に挿入
 		add_theme_support( 'automatic-feed-links' );
 
