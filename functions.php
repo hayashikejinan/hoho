@@ -30,6 +30,9 @@ if ( ! function_exists( 'hoho_setup' ) ):
 		// 投稿・コメントページで自動的にRSSフィードのリンクを <head> に挿入
 		add_theme_support( 'automatic-feed-links' );
 
+		// アイキャッチを有効化
+		add_theme_support( 'post-thumbnails' );
+
 	}
 
 endif;
