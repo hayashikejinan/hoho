@@ -42,7 +42,23 @@ if ( ! function_exists( 'hoho_setup' ) ):
 		);
 
 		// カスタムヘッダー画像有効化
-		add_theme_support( 'custom-header' );
+		add_theme_support(
+			'custom-header',
+			array(
+				// デフォルトの画像
+				'default-image' => get_template_directory_uri() . '/images/header.jpg',
+				// 幅を可変にするか否か
+				'flex-width'    => true,
+				// カスタムヘッダーの画像幅
+				'width'         => 9999, // 今回は幅 100% で使うため仮の数値 9999 にしておく
+				// 高さを可変にするか否か
+				'flex-height'   => true,
+				// カスタムヘッダーの画像高さ
+				'height'        => 300,
+				// ヘッダーテキストを使うか否か
+				'header-text'   => false,
+			)
+		);
 
 		// アイキャッチを有効化
 		add_theme_support( 'post-thumbnails' );
