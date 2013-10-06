@@ -56,13 +56,24 @@
 
 	<header class="wrapper clearfix">
 		<h1 class="title">h1.title</h1>
-		<nav>
-			<ul>
-				<li><a href="#">nav ul li a</a></li>
-				<li><a href="#">nav ul li a</a></li>
-				<li><a href="#">nav ul li a</a></li>
-			</ul>
-		</nav>
+
+		<?php
+		/**
+		 * ヘッダーメニュー
+		 */
+		wp_nav_menu(
+			array(
+				// 使うメニューの登録した名前を指定
+				'theme_location'  => 'primary',
+				// ul を囲むタグ。div か nav を指定。false でタグなし。デフォルト値は div
+				'container'       => 'nav',
+				// container にクラスを付与
+				'container_class' => 'nav nav-top menu-container',
+				// ul にクラスを付与。デフォルト値は menu
+				'menu_class'      => 'menu menu-top',
+			)
+		); ?>
+
 	</header>
 </div>
 

@@ -66,6 +66,9 @@ if ( ! function_exists( 'hoho_setup' ) ):
 		// アイキャッチを有効化
 		add_theme_support( 'post-thumbnails' );
 
+		// メニューを登録
+		register_nav_menu( 'primary', 'ヘッダーのメニュー' );
+
 	}
 
 endif;
