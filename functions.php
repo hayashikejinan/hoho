@@ -19,20 +19,22 @@ if ( ! isset( $content_width ) )
 
 if ( ! function_exists( 'hoho_setup' ) ):
 
+	/**
+	 * テーマのデフォルト設定や、WordPress 諸機能のサポートを登録・設定します。
+	 *
+	 * この関数は init フックの前に実行される after_setup_theme フックへ繋がっていることに注意してください。
+	 * init のアクションフックだと間に合わない機能があるからです。
+	 */
 	function hoho_setup() {
-		// ここに add_theme_support を書いていく
+
+		// 投稿・コメントページで自動的にRSSフィードのリンクを <head> に挿入
+		add_theme_support( 'automatic-feed-links' );
+
 	}
 
 endif;
 // 'after_setup_theme' フックが実行された時に 'hoho_setup' 関数を実行する処理
 add_action( 'after_setup_theme', 'hoho_setup' );
-
-/**
- * 自動的にRSSフィードのリンクを挿入
- *
- * @since WordPress 3.0
- */
-add_theme_support( 'automatic-feed-links' );
 
 /**
  * メインのサイドバーを定義
