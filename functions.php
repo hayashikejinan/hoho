@@ -31,7 +31,15 @@ if ( ! function_exists( 'hoho_setup' ) ):
 		add_theme_support( 'automatic-feed-links' );
 
 		// カスタム背景有効化
-		add_theme_support( 'custom-background' );
+		add_theme_support(
+			'custom-background',
+			array(
+				// デフォルトの色
+				'default-color' => 'fff',
+				// デフォルトの画像
+				//'default-image' => get_template_directory_uri() . '/images/background.jpg',
+			)
+		);
 
 		// アイキャッチを有効化
 		add_theme_support( 'post-thumbnails' );
