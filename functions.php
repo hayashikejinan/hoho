@@ -17,6 +17,16 @@
 if ( ! isset( $content_width ) )
 	$content_width = 585;
 
+if ( ! function_exists( 'hoho_setup' ) ):
+
+	function hoho_setup() {
+		// ここに add_theme_support を書いていく
+	}
+
+endif;
+// 'after_setup_theme' フックが実行された時に 'hoho_setup' 関数を実行する処理
+add_action( 'after_setup_theme', 'hoho_setup' );
+
 /**
  * 自動的にRSSフィードのリンクを挿入
  *
