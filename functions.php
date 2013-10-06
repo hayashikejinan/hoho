@@ -63,6 +63,9 @@ if ( ! function_exists( 'hoho_setup' ) ):
 			)
 		);
 
+		// コメントフォーム、検索フォーム、コメントリストを html5 マークアップにしてくれる
+		add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form' ) );
+
 		// アイキャッチを有効化
 		add_theme_support( 'post-thumbnails' );
 
