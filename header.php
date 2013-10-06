@@ -43,6 +43,17 @@
 <![endif]-->
 
 <div class="header-container">
+
+	<?php
+	// カスタムヘッダーを設定した場合表示する
+	if ( get_header_image() ) : ?>
+		<section class="site-header">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+				<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
+			</a>
+		</section>
+	<?php endif; ?>
+
 	<header class="wrapper clearfix">
 		<h1 class="title">h1.title</h1>
 		<nav>

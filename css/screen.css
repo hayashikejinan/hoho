@@ -212,6 +212,19 @@ a:hover img {
   color: white;
 }
 
+/* ================
+ *  MOBILE: Header
+ * ================ */
+.site-header a,
+.site-header a img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+.site-header img {
+  height: auto;
+  width: 100%;
+}
+
 /* ==============
  *  MOBILE: Menu
  * ============== */
