@@ -29,9 +29,21 @@
 			<section>
 
 				<?php if ( is_singular() ) : ?>
+
 					<?php the_content(); // 記事を表示 ?>
+
 				<?php else: ?>
+
+					<?php
+					// アイキャッチが設定されているか確認
+					if ( has_post_thumbnail() ) {
+						// アイキャッチ画像を出力
+						the_post_thumbnail();
+					};
+					?>
+
 					<?php the_excerpt(); // 記事の抜粋を表示 ?>
+
 				<?php endif; ?>
 
 			</section>
