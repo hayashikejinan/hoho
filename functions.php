@@ -88,12 +88,32 @@ add_action( 'after_setup_theme', 'hoho_setup' );
 /**
  * スクリプトとスタイルのエンキュー、アクションフック
  */
-function theme_name_scripts() {
-	wp_enqueue_style( 'style-name', get_stylesheet_uri() );
-	wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
+function hoho_scripts() {
+
+	// メインのスタイルシート
+	wp_enqueue_style( 'hoho-style', get_stylesheet_directory_uri() . '/css/screen.css' );
+	// IE 用のスタイルシート
+	if ( ! is_admin() )
+		wp_register_style( 'hoho-style-ie', get_stylesheet_directory_uri() . '/css/ie.css' );
+	$GLOBALS['wp_styles']->add_data( 'hoho-style-ie', 'conditional', 'lt IE 9' );
+	wp_enqueue_style( 'hoho-style-ie' );
+
+
+	// コメント用スクリプト
+	if ( is_singular() )
+		wp_enqueue_script( 'comment-reply' );
+	// Modernizr ライブラリ
+	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js' );
+	// メインの js
+	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js' );
+
+	// コンソールエラー回避のためのヘルパースクリプト
+	if ( WP_DEBUG )
+		wp_enqueue_script( 'plugins-js', get_template_directory_uri() . '/js/plugins.js' );
+
 }
 
-add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
+add_action( 'wp_enqueue_scripts', 'hoho_scripts' );
 
 
 /**
