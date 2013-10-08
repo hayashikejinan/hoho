@@ -17,6 +17,7 @@
 if ( ! isset( $content_width ) )
 	$content_width = 585;
 
+
 if ( ! function_exists( 'hoho_setup' ) ):
 
 	/**
@@ -82,6 +83,7 @@ if ( ! function_exists( 'hoho_setup' ) ):
 endif;
 // 'after_setup_theme' フックが実行された時に 'hoho_setup' 関数を実行する処理
 add_action( 'after_setup_theme', 'hoho_setup' );
+
 
 /**
  * メインのサイドバーを定義
