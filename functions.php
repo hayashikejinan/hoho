@@ -9,6 +9,12 @@
  * @subpackage Hoho
  */
 
+// テーマのバージョンを取得・定義
+$ver = wp_get_theme();
+$ver = $ver->get( 'Version' );
+define( 'THEME_VER', $ver );
+
+
 /**
  * コンテンツエリアの最大許容幅を設定
  *
