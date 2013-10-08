@@ -16,6 +16,14 @@ get_header(); ?>
 
 	<div class="main clearfix">
 
+		<header class="page-header">
+
+			<h1 class="page-title">
+				<?php wp_title(''); ?>
+			</h1>
+
+		</header>
+
 		<?php
 		// content.php を読み込む
 		get_template_part( 'content' ); ?>
