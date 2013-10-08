@@ -34,7 +34,11 @@
 	</div>
 
 	<footer class="wrapper">
-		<h3>footer</h3>
+
+		<p class="copyright">
+			&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>.
+		</p>
+
 	</footer>
 </div>
 

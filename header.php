@@ -23,7 +23,7 @@
 	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 	<meta name="viewport" content="width=device-width">
 
-	<title><?php wp_title(); ?></title>
+	<title><?php wp_title( '|', true, 'right' ); ?><?php bloginfo( 'name' ); ?></title>
 
 	<?php wp_head(); ?>
 </head>
@@ -42,7 +42,10 @@
 	<?php endif; ?>
 
 	<header class="wrapper clearfix">
-		<h1 class="title">h1.title</h1>
+
+		<h1 class="title">
+			<?php bloginfo( 'name' ); ?>
+		</h1>
 
 		<?php
 		/**
