@@ -116,8 +116,11 @@ a img.aligncenter {
 }
 
 .wp-caption {
-  background: white;
+  background: #eeeeee;
   border: 1px solid #f0f0f0;
+  -webkit-box-shadow: 0 5px 10px #aaaaaa;
+  -moz-box-shadow: 0 5px 10px #aaaaaa;
+  box-shadow: 0 5px 10px #aaaaaa;
   max-width: 96%;
   /* Image does not overflow the content area */
   padding: 5px 3px 10px;
@@ -258,6 +261,10 @@ nav a:hover {
 
 .main article h1 {
   font-size: 2em;
+}
+.main article img {
+  height: auto;
+  max-width: 100%;
 }
 
 .mceContentBody {
