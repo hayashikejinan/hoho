@@ -21,8 +21,9 @@
 					</a>
 				</h1>
 
-				<time><?php the_time( 'Y.n.j' ); ?></time>
+				<time><i class="icon-clock"></i> <?php the_time( __( 'Y/m/d' ) ); ?></time>
 
+				<i class="icon-file_close_alt"></i>
 				<?php the_category(); ?>
 
 			</header>
@@ -49,7 +50,10 @@
 			</section>
 			<footer>
 
-				<?php the_tags(); ?>
+				<?php if ( is_singular() && has_tag() ) : ?>
+					<i class="icon-hashtag"></i> <?php the_tags( '', ' ' ); ?>
+				<?php else: ?>
+				<?php endif; ?>
 
 			</footer>
 		</article>

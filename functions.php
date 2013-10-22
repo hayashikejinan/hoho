@@ -95,6 +95,8 @@ add_action( 'after_setup_theme', 'hoho_setup' );
  */
 function hoho_scripts() {
 
+	// MFG Labs icon set
+	wp_enqueue_style( 'mfglabs-iconset', get_stylesheet_directory_uri() . '/fonts/css/mfglabs_iconset.css', array(), '1.0' );
 	// メインのスタイルシート
 	wp_enqueue_style( 'hoho-style', get_stylesheet_directory_uri() . '/css/screen.css', array(), THEME_VER );
 	// IE 用のスタイルシート
