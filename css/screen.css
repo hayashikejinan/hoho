@@ -687,9 +687,6 @@ a img.aligncenter {
   visibility: hidden;
 }
 
-.clearfix {
-  *zoom: 1;
-}
 .clearfix:before {
   content: " ";
   display: table;
@@ -698,6 +695,7 @@ a img.aligncenter {
   content: " ";
   display: table;
   clear: both;
+  *zoom: 1;
 }
 
 @media only screen and (min-width: 768px) {
