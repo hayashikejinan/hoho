@@ -231,11 +231,11 @@ a:hover img {
 /* ==============
  *  MOBILE: Menu
  * ============== */
-nav ul {
+.nav ul {
   margin: 0;
   padding: 0;
 }
-nav a {
+.nav a {
   display: block;
   margin-bottom: 10px;
   padding: 15px 0;
@@ -245,10 +245,10 @@ nav a {
   color: white;
   background: #e44d26;
 }
-nav a:hover, nav a:visited {
+.nav a:hover, .nav a:visited {
   color: white;
 }
-nav a:hover {
+.nav a:hover {
   text-decoration: underline;
 }
 
@@ -269,6 +269,23 @@ nav a:hover {
 
 .mceContentBody {
   padding: 0 20px;
+}
+
+.navigation a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: #e44d26;
+}
+.navigation a:hover, .navigation a:visited {
+  color: white;
+}
+.navigation a:hover {
+  text-decoration: underline;
 }
 
 /* =================
@@ -308,17 +325,17 @@ nav a:hover {
   /* ====================
    *  INTERMEDIATE: Menu
    * ==================== */
-  nav a {
+  .nav a {
     float: left;
     width: 27%;
     margin: 0 1.7%;
     padding: 25px 2%;
     margin-bottom: 0;
   }
-  nav li:first-child a {
+  .nav li:first-child a {
     margin-left: 0;
   }
-  nav li:last-child a {
+  .nav li:last-child a {
     margin-right: 0;
   }
 }
@@ -340,7 +357,7 @@ nav a:hover {
     float: left;
   }
 
-  nav {
+  .nav {
     float: right;
     width: 38%;
   }
