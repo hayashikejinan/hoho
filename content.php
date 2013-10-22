@@ -68,7 +68,7 @@
 					<?php $tags = get_the_tags();
 					if ( $tags ) : ?>
 						<p class="tags">
-							<span>
+							<span class="label">
 								<i class="icon-hashtag"></i>
 								<?php foreach ( $tags as $tag ) : ?>
 									<a rel="tag" href="<?php echo get_tag_link( $tag->term_id ); ?>">
