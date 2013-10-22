@@ -139,7 +139,7 @@ register_sidebar( $args = array(
 		// サイドバーウィジェットに付加されるクラス
 		'class'         => '',
 		// ウィジェットの前に配置する HTML
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget shadow %2$s">',
 		// ウィジェットの後に配置する HTML
 		'after_widget'  => '</aside>',
 		// ウィジェットタイトルの前に配置する HTML

@@ -29,7 +29,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-<div class="header-container">
+<div class="header-container shadow">
 
 	<?php
 	// カスタムヘッダーを設定した場合表示する

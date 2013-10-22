@@ -296,9 +296,6 @@ a img.aligncenter {
 .wp-caption {
   background: #eeeeee;
   border: 1px solid #f0f0f0;
-  -webkit-box-shadow: 0 5px 10px #aaaaaa;
-  -moz-box-shadow: 0 5px 10px #aaaaaa;
-  box-shadow: 0 5px 10px #aaaaaa;
   max-width: 96%;
   /* Image does not overflow the content area */
   padding: 5px 3px 10px;
@@ -375,13 +372,6 @@ a img.aligncenter {
   /* ====================
    *  WIDE: CSS3 Effects
    * ==================== */
-  .header-container,
-  .sidebar aside {
-    -webkit-box-shadow: 0 5px 10px #aaaaaa;
-    -moz-box-shadow: 0 5px 10px #aaaaaa;
-    box-shadow: 0 5px 10px #aaaaaa;
-  }
-
   /* ============
    *  WIDE: Menu
    * ============ */
@@ -480,6 +470,13 @@ a img.aligncenter {
   clear: both;
 }
 
+@media only screen and (min-width: 768px) {
+  .shadow, .wp-caption {
+    -webkit-box-shadow: 0 5px 10px #aaaaaa;
+    -moz-box-shadow: 0 5px 10px #aaaaaa;
+    box-shadow: 0 5px 10px #aaaaaa;
+  }
+}
 /* ==========================================================================
  * Print styles
  * ========================================================================== */

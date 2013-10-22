@@ -39,7 +39,6 @@ a img
 .wp-caption
 	background: #eee
 	border: 1px solid #f0f0f0
-	@include box-shadow(0 5px 10px #aaa)
 	max-width: 96%
 	/* Image does not overflow the content area
 	padding: 5px 3px 10px
@@ -82,3 +81,7 @@ a img
 // for visual editor
 .mceContentBody
 	padding: 0 20px
+
+@media only screen and (min-width: 768px)
+	.wp-caption
+		@extend .shadow
