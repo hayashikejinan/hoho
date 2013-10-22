@@ -55,7 +55,7 @@ if ( ! function_exists( 'hoho_setup' ) ):
 			'custom-header',
 			array(
 				// デフォルトの画像
-				'default-image' => get_template_directory_uri() . '/images/header.jpg',
+				'default-image' => get_template_directory_uri() . '/images/default_header_image.jpg',
 				// 幅を可変にするか否か
 				'flex-width'    => true,
 				// カスタムヘッダーの画像幅
