@@ -106,6 +106,28 @@ a:hover
  *  MOBILE: Menu
  * ==============
 
+// レスポンシブメニュー
+@import menu
+
+#mobile-header
+	display: block
+
+	a
+		background: $base-color-dark
+		color: $white
+		font-size: 1.75em
+		font-weight: bold
+		line-height: 1.4em
+		padding: 5px 8px
+		&:hover
+			color: $base-color
+			text-decoration: none
+
+#navigation
+	display: block
+	height: 0
+	overflow: hidden
+
 .nav
 	ul
 		margin: 0
@@ -139,6 +161,11 @@ a:hover
 		img
 			height: auto
 			max-width: 100%
+	button,
+	input,
+	select,
+	textarea
+		max-width: 100%
 
 // ページネーション
 .navigation

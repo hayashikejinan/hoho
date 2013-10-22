@@ -112,8 +112,10 @@ function hoho_scripts() {
 	// Modernizr ライブラリ
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js',
 		array(), '2.6.2', false );
+	// レスポンシブメニュー
+	wp_enqueue_script( 'sidr', get_template_directory_uri() . '/js/jquery.sidr.min.js', array(), '1.1.1', true );
 	// メインの js
-	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array(), THEME_VER, true );
+	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), THEME_VER, true );
 
 	// コンソールエラー回避のためのヘルパースクリプト
 	if ( WP_DEBUG )

@@ -47,6 +47,12 @@
 			<?php bloginfo( 'name' ); ?>
 		</h1>
 
+		<div id="mobile-header">
+			<a id="responsive-menu-button" href="#sidr-main">
+				<i class="icon-reorder"></i>
+			</a>
+		</div>
+
 		<?php
 		/**
 		 * ヘッダーメニュー
@@ -59,6 +65,8 @@
 				'container'       => 'nav',
 				// container にクラスを付与
 				'container_class' => 'nav nav-top menu-container',
+				// container に ID を付与
+				'container_id'    => 'navigation',
 				// ul にクラスを付与。デフォルト値は menu
 				'menu_class'      => 'menu menu-top',
 			)
