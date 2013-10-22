@@ -70,104 +70,6 @@ body {
   margin: 0 5%;
 }
 
-/* =================
- * WordPress Styles
- * ================= */
-.alignnone {
-  margin: 5px 20px 20px 0;
-}
-
-.aligncenter,
-div.aligncenter {
-  display: block;
-  margin: 5px auto 5px auto;
-}
-
-.alignright {
-  float: right;
-  margin: 5px 0 20px 20px;
-}
-
-.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0;
-}
-
-.aligncenter {
-  display: block;
-  margin: 5px auto 5px auto;
-}
-
-a img.alignright {
-  float: right;
-  margin: 5px 0 20px 20px;
-}
-a img.alignnone {
-  margin: 5px 20px 20px 0;
-}
-a img.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0;
-}
-a img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wp-caption {
-  background: #eeeeee;
-  border: 1px solid #f0f0f0;
-  -webkit-box-shadow: 0 5px 10px #aaaaaa;
-  -moz-box-shadow: 0 5px 10px #aaaaaa;
-  box-shadow: 0 5px 10px #aaaaaa;
-  max-width: 96%;
-  /* Image does not overflow the content area */
-  padding: 5px 3px 10px;
-  text-align: center;
-}
-.wp-caption.alignnone, .wp-caption.alignleft {
-  margin: 5px 20px 20px 0;
-}
-.wp-caption.alignright {
-  margin: 5px 0 20px 20px;
-}
-.wp-caption img {
-  border: 0 none;
-  height: auto;
-  margin: 0;
-  max-width: 98.5%;
-  padding: 0;
-  width: auto;
-}
-.wp-caption p.wp-caption-text {
-  font-size: 11px;
-  line-height: 17px;
-  margin: 0;
-  padding: 0 4px 5px;
-}
-
-.sticky time {
-  display: none;
-}
-
-.gallery-caption {
-  padding: 0;
-}
-
-.bypostauthor {
-  background-color: #e44d26;
-}
-
-.size-auto,
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
-  max-width: 100%;
-  height: auto;
-}
-
 /* ===================
  *  ALL: Orange Theme
  * =================== */
@@ -267,10 +169,6 @@ a:hover img {
   max-width: 100%;
 }
 
-.mceContentBody {
-  padding: 0 20px;
-}
-
 .navigation a {
   display: block;
   margin-bottom: 10px;
@@ -318,6 +216,111 @@ a:hover img {
 /* ==========================================================================
  * Author's custom styles
  * ========================================================================== */
+/* ==========================================================================
+ * WordPress Styles
+ * ========================================================================== */
+/* =================
+ * WordPress Styles
+ * ================= */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  background: #eeeeee;
+  border: 1px solid #f0f0f0;
+  -webkit-box-shadow: 0 5px 10px #aaaaaa;
+  -moz-box-shadow: 0 5px 10px #aaaaaa;
+  box-shadow: 0 5px 10px #aaaaaa;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+.wp-caption.alignnone, .wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+.sticky time {
+  display: none;
+}
+
+.gallery-caption {
+  padding: 0;
+}
+
+.bypostauthor {
+  background-color: #e44d26;
+}
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+.mceContentBody {
+  padding: 0 20px;
+}
+
 /* ==========================================================================
  * Media Queries
  * ========================================================================== */
