@@ -170,7 +170,8 @@ a:hover img {
 }
 
 .navigation {
-  padding: 20px 0;
+  float: right;
+  padding: 0 0 15px;
 }
 .navigation ul {
   padding: 0;
@@ -192,24 +193,18 @@ a:hover img {
 }
 .navigation li a {
   background: #f16529;
-  border-radius: 3px;
   cursor: pointer;
   padding: 12px;
-  padding: 0.75rem;
 }
 .navigation li a:hover {
   background: #e44d26;
-  border-radius: 3px;
   cursor: pointer;
   padding: 12px;
-  padding: 0.75rem;
 }
 .navigation li.active a, .navigation li.disabled {
   background: #e44d26;
-  border-radius: 3px;
   cursor: pointer;
   padding: 12px;
-  padding: 0.75rem;
 }
 .navigation li a:hover, .navigation li.active a {
   background-color: #e44d26;
