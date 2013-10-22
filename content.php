@@ -63,8 +63,22 @@
 			</section>
 			<footer>
 
-				<?php if ( is_singular() && has_tag() ) : ?>
-					<i class="icon-hashtag"></i> <?php the_tags( '', ' ' ); ?>
+				<?php if ( is_singular() ) : ?>
+
+					<?php $tags = get_the_tags();
+					if ( $tags ) : ?>
+						<p class="tags">
+							<span>
+								<i class="icon-hashtag"></i>
+								<?php foreach ( $tags as $tag ) : ?>
+									<a rel="tag" href="<?php echo get_tag_link( $tag->term_id ); ?>">
+										<?php echo $tag->name; ?>
+									</a>
+								<?php endforeach; ?>
+							</span>
+						</p>
+					<?php endif; ?>
+
 				<?php else: ?>
 				<?php endif; ?>
 
