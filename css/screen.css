@@ -347,6 +347,12 @@ a img.aligncenter {
   padding: 0 20px;
 }
 
+.hentry {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+}
+
 /* ==========================================================================
  * Media Queries
  * ========================================================================== */
@@ -366,6 +372,10 @@ a img.aligncenter {
   }
   .nav li:last-child a {
     margin-right: 0;
+  }
+
+  .hentry {
+    border: none;
   }
 }
 @media only screen and (min-width: 768px) {
