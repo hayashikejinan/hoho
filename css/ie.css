@@ -1,8 +1,3 @@
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
 /* ===============
  *  ALL: IE Fixes
  * =============== */
@@ -14,11 +9,11 @@
   /* ========================
    * INTERMEDIATE: IE Fixes
    * ======================== */
-  nav ul li {
+  .nav ul li {
     display: inline;
   }
 
-  .lt-ie9 nav a {
+  .lt-ie9 .nav a {
     margin: 0 1.4%;
   }
 }
