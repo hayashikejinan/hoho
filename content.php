@@ -44,7 +44,7 @@
 				<?php endif; ?>
 
 			</header>
-			<section>
+			<section class="entry-content">
 
 				<?php if ( is_singular() ) : ?>
 

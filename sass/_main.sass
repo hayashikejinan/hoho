@@ -49,6 +49,7 @@ textarea
  * ==========================================================================
 
 body
+	color: $grayDark
 	font: 16px / 26px $font-family-maru-gothic
 
 .wrapper
@@ -60,15 +61,13 @@ body
  * ===================
 
 a
-	color: $link-color
+	color: $black
 	text-decoration: none
 
 	&:hover,
-	&:visited
+	&:focus,
+	&:active
 		color: $link-color
-
-	&:hover
-		text-decoration: underline
 
 a,
 a img
@@ -95,7 +94,7 @@ a:hover
  * ================
 
 .title
-	color: white
+	color: $white
 
 .site-header
 	position: relative
@@ -152,7 +151,7 @@ a:hover
 
 		&:hover,
 		&:visited
-			color: white
+			color: $white
 
 		&:hover
 			text-decoration: underline
@@ -179,6 +178,17 @@ a:hover
 	textarea
 		max-width: 100%
 
+// コンテンツエリア
+.entry-content
+	a
+		color: $link-color
+		text-decoration: underline
+
+		&:hover,
+		&:focus,
+		&:active
+			color: $link-hover-color
+
 // ページネーション
 .pagination
 	float: right
@@ -191,16 +201,16 @@ a:hover
 		display: inline
 
 		a
-			color: #fff
+			color: $white
 			text-decoration: none
 
 			&:hover
-				color: #fff
+				color: $white
 				text-decoration: none
 
 		&.active a,
 		&.disabled
-			color: #fff
+			color: $white
 			text-decoration: none
 
 		a
@@ -234,20 +244,16 @@ a:hover
 
 	a
 		text-decoration: none
-		color: white
-
-		&:hover,
-		&:visited
-			color: white
+		color: $white
 
 		&:hover
-			text-decoration: underline
+			color: $grayDarker
 
 .widget
 	margin: 0 0 30px
 
 .footer-container footer
-	color: white
+	color: $white
 	padding: 20px 0
 
 /* ==========================================================================

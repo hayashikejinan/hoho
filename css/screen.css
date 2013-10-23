@@ -62,6 +62,7 @@ textarea {
  * Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
  * ========================================================================== */
 body {
+  color: #333333;
   font: 16px/26px "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
 }
 
@@ -74,14 +75,11 @@ body {
  *  ALL: Orange Theme
  * =================== */
 a {
-  color: #f16529;
+  color: black;
   text-decoration: none;
 }
-a:hover, a:visited {
+a:hover, a:focus, a:active {
   color: #f16529;
-}
-a:hover {
-  text-decoration: underline;
 }
 
 a,
@@ -388,6 +386,14 @@ a:hover img {
   max-width: 100%;
 }
 
+.entry-content a {
+  color: #f16529;
+  text-decoration: underline;
+}
+.entry-content a:hover, .entry-content a:focus, .entry-content a:active {
+  color: #f69971;
+}
+
 .pagination {
   float: right;
   padding: 0 0 15px;
@@ -440,11 +446,8 @@ a:hover img {
   text-decoration: none;
   color: white;
 }
-.sidebar a:hover, .sidebar a:visited {
-  color: white;
-}
 .sidebar a:hover {
-  text-decoration: underline;
+  color: #222222;
 }
 
 .widget {
