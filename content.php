@@ -21,24 +21,27 @@
 					</a>
 				</h1>
 
-				<time><i class="icon-clock"></i> <?php the_time( __( 'Y/m/d' ) ); ?></time>
+				<?php if ( is_archive() || is_home() || is_single() ): ?>
 
-				<?php
-				// カテゴリをリスト化せずリンクで
-				$categories = get_the_category();
-				if ( $categories ) {
-					$separator = ' ';
-					$output    = '<i class="icon-file_alt"> </i>';
+					<time><i class="icon-clock"></i> <?php the_time( __( 'Y/m/d' ) ); ?></time>
+
+					<?php
+					// カテゴリをリスト化せずリンクで
+					$categories = get_the_category();
 					if ( $categories ) {
-						foreach ( $categories as $category ) {
-							$output .= '<a href="' . get_category_link( $category->term_id ) . '" title="' .
-								esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">' .
-								$category->cat_name . '</a>' . $separator;
+						$separator = ' ';
+						$output    = '<i class="icon-file_alt"> </i>';
+						if ( $categories ) {
+							foreach ( $categories as $category ) {
+								$output .= '<a href="' . get_category_link( $category->term_id ) . '" title="' .
+									esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">' .
+									$category->cat_name . '</a>' . $separator;
+							}
+							echo trim( $output, $separator );
 						}
-						echo trim( $output, $separator );
-					}
-				};
-				?>
+					}; ?>
+
+				<?php endif; ?>
 
 			</header>
 			<section>
