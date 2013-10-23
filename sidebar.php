@@ -17,10 +17,12 @@
 
 	<?php else : ?>
 
-		<aside>
-			<h3>aside</h3>
+		<aside class="widget shadow">
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+			<h3 class="widgettitle">ウィジェットサンプル</h3>
+
+			<p>ウィジェットの表示サンプルです。ウィジェットを何かしら有効にしてください。有効にしましたらこちらサンプルは消えます。</p>
+
 		</aside>
 
 	<?php endif; ?>
