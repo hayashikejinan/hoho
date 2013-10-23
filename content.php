@@ -45,7 +45,11 @@
 
 				<?php if ( is_singular() ) : ?>
 
+					<?php get_template_part( 'template/content', 'before' ); ?>
+
 					<?php the_content(); // 記事を表示 ?>
+
+					<?php get_template_part( 'template/content', 'after' ); ?>
 
 				<?php else: ?>
 
