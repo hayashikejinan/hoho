@@ -113,13 +113,16 @@ a:hover img {
   background: #f16529;
 }
 
+/* ================
+ *  MOBILE: Header
+ * ================ */
 .title {
   color: white;
 }
 
-/* ================
- *  MOBILE: Header
- * ================ */
+.site-header {
+  position: relative;
+}
 .site-header a,
 .site-header a img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -584,6 +587,16 @@ a img.aligncenter {
  * Media Queries
  * ========================================================================== */
 @media only screen and (min-width: 480px) {
+  /* ========
+   *  Header
+   * ======== */
+  .title {
+    line-height: 1.4em;
+    max-width: 1026px;
+    position: absolute;
+    bottom: 0;
+  }
+
   /* ====================
    *  INTERMEDIATE: Menu
    * ==================== */

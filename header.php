@@ -40,14 +40,15 @@
 				<img class="" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>"
 					 src="<?php header_image(); ?>" alt="" />
 			</a>
+
+			<div class="wrapper">
+				<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
+			</div>
+
 		</section>
 	<?php endif; ?>
 
 	<header class="wrapper clearfix">
-
-		<h1 class="title">
-			<?php bloginfo( 'name' ); ?>
-		</h1>
 
 		<div id="mobile-header">
 			<a id="responsive-menu-button" href="#sidr-main">
