@@ -703,6 +703,14 @@ a img.aligncenter {
   visibility: hidden;
 }
 
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
 .clearfix:before {
   content: " ";
   display: table;
