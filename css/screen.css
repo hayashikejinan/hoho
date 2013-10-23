@@ -388,44 +388,44 @@ a:hover img {
   max-width: 100%;
 }
 
-.navigation {
+.pagination {
   float: right;
   padding: 0 0 15px;
 }
-.navigation ul {
+.pagination ul {
   padding: 0;
 }
-.navigation li {
+.pagination li {
   display: inline;
 }
-.navigation li a {
+.pagination li a {
   color: white;
   text-decoration: none;
 }
-.navigation li a:hover {
+.pagination li a:hover {
   color: white;
   text-decoration: none;
 }
-.navigation li.active a, .navigation li.disabled {
+.pagination li.active a, .pagination li.disabled {
   color: white;
   text-decoration: none;
 }
-.navigation li a {
+.pagination li a {
   background: #f16529;
   cursor: pointer;
   padding: 12px;
 }
-.navigation li a:hover {
+.pagination li a:hover {
   background: #e44d26;
   cursor: pointer;
   padding: 12px;
 }
-.navigation li.active a, .navigation li.disabled {
+.pagination li.active a, .pagination li.disabled {
   background: #e44d26;
   cursor: pointer;
   padding: 12px;
 }
-.navigation li a:hover, .navigation li.active a {
+.pagination li a:hover, .pagination li.active a {
   background-color: #e44d26;
 }
 

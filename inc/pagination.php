@@ -30,7 +30,7 @@ if ( ( $paged + 2 ) <= $max ) {
 	$links[] = $paged + 1;
 }
 
-echo '<nav class="navigation"><ul>' . "\n";
+echo '<nav class="pagination"><ul>' . "\n";
 
 // 前のページへ
 if ( get_previous_posts_link() )
