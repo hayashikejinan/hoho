@@ -73,7 +73,9 @@
 
 				<?php if ( is_singular() ) : ?>
 
-					<?php $tags = get_the_tags();
+					<?php
+					// タグをループで
+					$tags = get_the_tags();
 					if ( $tags ) : ?>
 						<p class="tags">
 							<span class="label">
