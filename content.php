@@ -28,7 +28,7 @@
 				$categories = get_the_category();
 				if ( $categories ) {
 					$separator = ' ';
-					$output    = '<i class="icon-file_close_alt"> </i>';
+					$output    = '<i class="icon-file_alt"> </i>';
 					if ( $categories ) {
 						foreach ( $categories as $category ) {
 							$output .= '<a href="' . get_category_link( $category->term_id ) . '" title="' .
