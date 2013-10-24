@@ -378,6 +378,7 @@ a:hover img {
 .main article img {
   height: auto;
   max-width: 100%;
+  width: inherit;
 }
 .main button,
 .main input,
@@ -392,6 +393,22 @@ a:hover img {
 }
 .entry-content a:hover, .entry-content a:focus, .entry-content a:active {
   color: #f69971;
+}
+.entry-content ul li {
+  list-style: square outside;
+}
+.entry-content table th,
+.entry-content table td {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+.entry-content table tr {
+  border-bottom: 3px solid #dddddd;
+}
+.entry-content thead th {
+  padding-bottom: 10px;
 }
 
 .pagination {
@@ -449,6 +466,9 @@ a:hover img {
 .sidebar a:hover {
   color: #222222;
 }
+.sidebar ul li {
+  list-style: square outside;
+}
 
 .widget {
   margin: 0 0 30px;
@@ -476,6 +496,41 @@ a:hover img {
   background-color: #e44d26;
   color: white;
   text-decoration: none;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #dddddd;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+blockquote:before {
+  color: #dddddd;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+q {
+  color: #555555;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+q:before {
+  color: #999999;
+  content: open-quote;
+  font-size: 2em;
+  line-height: 0.1em;
+  margin-right: 0.125em;
+  vertical-align: -0.4em;
+}
+q:after {
+  content: "";
 }
 
 /* ==========================================================================
@@ -750,10 +805,12 @@ i,
 
 .icon2x {
   font-size: 2em;
+  line-height: 1.5em;
 }
 
 .icon3x {
   font-size: 3em;
+  line-height: 1.5em;
 }
 
 @media only screen and (min-width: 768px) {

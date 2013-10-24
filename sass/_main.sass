@@ -171,6 +171,7 @@ a:hover
 		img
 			height: auto
 			max-width: 100%
+			width: inherit
 
 	button,
 	input,
@@ -188,6 +189,29 @@ a:hover
 		&:focus,
 		&:active
 			color: $link-hover-color
+
+	ul
+		li
+			list-style: square outside
+
+	table
+		th,
+		td
+			padding-bottom: 15px
+			padding-top: 15px
+			text-align: center
+			vertical-align: middle
+
+		tr
+			border-bottom: 3px solid $grayLighter
+
+	caption
+
+	thead
+		th
+			padding-bottom: 10px
+
+	tfoot
 
 // ページネーション
 .pagination
@@ -248,6 +272,10 @@ a:hover
 
 		&:hover
 			color: $grayDarker
+
+	ul
+		li
+			list-style: square outside
 
 .widget
 	margin: 0 0 30px
