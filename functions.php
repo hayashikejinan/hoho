@@ -95,6 +95,8 @@ add_action( 'after_setup_theme', 'hoho_setup' );
  */
 function hoho_scripts() {
 
+	// entpo web font
+	wp_enqueue_style( 'fontawesome', '//weloveiconfonts.com/api/?family=fontawesome', array(), null );
 	// メインのスタイルシート
 	wp_enqueue_style( 'hoho-style', get_stylesheet_directory_uri() . '/css/screen.css', array(), THEME_VER );
 	// IE 用のスタイルシート

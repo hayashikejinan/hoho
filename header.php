@@ -52,7 +52,7 @@
 
 		<div id="mobile-header">
 			<a id="responsive-menu-button" href="#sidr-main">
-				<i class="icon-reorder"></i>
+				<i class="fontawesome-reorder"></i>
 			</a>
 		</div>
 

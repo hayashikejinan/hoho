@@ -23,14 +23,14 @@
 
 				<?php if ( is_archive() || is_home() || is_single() ): ?>
 
-					<time><i class="icon-clock"></i> <?php the_time( __( 'Y/m/d' ) ); ?></time>
+					<time><i class="fontawesome-time"></i> <?php the_time( __( 'Y/m/d' ) ); ?></time>
 
 					<?php
 					// カテゴリをリスト化せずリンクで
 					$categories = get_the_category();
 					if ( $categories ) {
 						$separator = ' ';
-						$output    = '<i class="icon-file_alt"> </i>';
+						$output    = '<i class="fontawesome-folder-open-alt"> </i>';
 						if ( $categories ) {
 							foreach ( $categories as $category ) {
 								$output .= '<a href="' . get_category_link( $category->term_id ) . '" title="' .
@@ -79,7 +79,7 @@
 					if ( $tags ) : ?>
 						<p class="tags">
 							<span class="label">
-								<i class="icon-hashtag"></i>
+								<i class="fontawesome-tags"></i>
 								<?php foreach ( $tags as $tag ) : ?>
 									<a rel="tag" href="<?php echo get_tag_link( $tag->term_id ); ?>">
 										<?php echo $tag->name; ?>
