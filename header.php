@@ -26,6 +26,11 @@
 	<title><?php wp_title( '|', true, 'right' ); ?><?php bloginfo( 'name' ); ?></title>
 
 	<?php wp_head(); ?>
+
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+	<![endif]-->
+
 </head>
 <body <?php body_class(); ?>>
 
