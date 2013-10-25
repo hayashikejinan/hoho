@@ -1,6 +1,8 @@
 <?php
 /**
  * ページネーション
+ *
+ * @since 0.1
  */
 
 if ( is_singular() )
