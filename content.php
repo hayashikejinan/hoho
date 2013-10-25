@@ -14,18 +14,32 @@
 <?php if ( have_posts() ) : ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<article <?php post_class(); ?>>
+		<article <?php post_class(); ?> itemscope itemtype="http://schema.org/Article">
 			<header>
 
-				<h1>
-					<a href="<?php the_permalink(); ?>">
-						<?php the_title(); ?>
-					</a>
+				<h1 itemprop="name">
+					<a href="<?php the_permalink(); ?>" itemprop="url"><?php the_title(); ?></a>
 				</h1>
 
 				<?php if ( is_archive() || is_home() || is_single() ): ?>
 
-					<time><i class="fontawesome-time"></i> <?php the_time( __( 'Y/m/d' ) ); ?></time>
+					<time itemprop="datePublished" datetime="<?php the_time( 'Y-m-d' ); ?>">
+						<i class="fontawesome-time"></i>
+						<?php the_time( __( 'Y/m/d' ) ); ?>
+					</time>
+
+					<i class="fontawesome-user"></i>
+					<?php
+					// 投稿者リンク 構造化データマークアップ
+					global $authordata;
+					echo sprintf(
+						'<a href="%1$s" title="%2$s" rel="author">%3$s</a>',
+						esc_url( get_author_posts_url( $authordata->ID, $authordata->user_nicename ) ),
+						esc_attr( sprintf( __( 'Posts by %s' ), get_the_author() ) ),
+						'<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">' .
+						get_the_author() . '</span></span>'
+					);
+					?>
 
 					<?php
 					// カテゴリをリスト化せずリンクで
@@ -37,7 +51,7 @@
 							foreach ( $categories as $category ) {
 								$output .= '<a href="' . get_category_link( $category->term_id ) . '" title="' .
 									esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">' .
-									$category->cat_name . '</a>' . $separator;
+									'<span itemprop="articleSection">' . $category->cat_name . '</span></a>' . $separator;
 							}
 							echo trim( $output, $separator );
 						}
@@ -52,7 +66,9 @@
 
 					<?php get_template_part( 'template/content', 'before' ); ?>
 
-					<?php the_content(); // 記事を表示 ?>
+					<div itemprop="articleBody">
+						<?php the_content(); // 記事を表示 ?>
+					</div>
 
 					<?php get_template_part( 'template/content', 'after' ); ?>
 
