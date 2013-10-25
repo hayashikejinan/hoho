@@ -516,6 +516,14 @@ q:after {
   content: "";
 }
 
+.main-color {
+  color: #f16529;
+}
+
+.main-color-dark {
+  color: #e44d26;
+}
+
 i,
 .icon {
   font-family: "FontAwesome";
