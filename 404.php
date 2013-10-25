@@ -12,6 +12,8 @@ get_header(); ?>
 
 	<div class="main clearfix">
 
+		<?php get_template_part( 'inc/breadcrumbs' ); ?>
+
 		<article>
 			<section>
 				<h1>Not found <span>:(</span></h1>
