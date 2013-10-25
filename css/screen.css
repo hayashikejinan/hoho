@@ -136,6 +136,7 @@ a:hover img {
  * ============== */
 .sidr {
   /* Default Settings */
+  border-right: 10px solid #222222;
   display: none;
   position: absolute;
   position: fixed;
@@ -149,15 +150,6 @@ a:hover img {
   font-size: 15px;
   background: #333333;
   color: white;
-  -webkit-box-shadow: inset 0 0 5px 5px #222222;
-  -moz-box-shadow: inset 0 0 5px 5px #222222;
-  box-shadow: inset 0 0 5px 5px #222222;
-}
-.sidr a {
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
 }
 .sidr .sidr-inner {
   padding: 0 0 15px;
@@ -191,9 +183,6 @@ a:hover img {
   background-image: -moz-linear-gradient(#4d4d4d, #1a1a1a);
   background-image: -o-linear-gradient(#4d4d4d, #1a1a1a);
   background-image: linear-gradient(#4d4d4d, #1a1a1a);
-  -webkit-box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.2);
 }
 .sidr p {
   font-size: 13px;
@@ -214,9 +203,7 @@ a:hover img {
   border-bottom: 1px solid #4d4d4d;
 }
 .sidr ul .current-menu-item a {
-  -webkit-box-shadow: inset 0 0 15px 3px #222222;
-  -moz-box-shadow: inset 0 0 15px 3px #222222;
-  box-shadow: inset 0 0 15px 3px #222222;
+  background: #222222;
 }
 .sidr ul li {
   display: block;
@@ -233,9 +220,7 @@ a:hover img {
 .sidr ul li:hover > span, .sidr ul li.active > a,
 .sidr ul li.active > span, .sidr ul li.sidr-class-active > a,
 .sidr ul li.sidr-class-active > span {
-  -webkit-box-shadow: inset 0 0 15px 3px #222222;
-  -moz-box-shadow: inset 0 0 15px 3px #222222;
-  box-shadow: inset 0 0 15px 3px #222222;
+  background: #e44d26;
 }
 .sidr ul li a, .sidr ul li span {
   padding: 0 15px;
@@ -262,9 +247,7 @@ a:hover img {
 .sidr ul li ul li:hover > span, .sidr ul li ul li.active > a,
 .sidr ul li ul li.active > span, .sidr ul li ul li.sidr-class-active > a,
 .sidr ul li ul li.sidr-class-active > span {
-  -webkit-box-shadow: inset 0 0 15px 3px #222222;
-  -moz-box-shadow: inset 0 0 15px 3px #222222;
-  box-shadow: inset 0 0 15px 3px #222222;
+  background: #e44d26;
 }
 .sidr ul li ul li a,
 .sidr ul li ul li span {
