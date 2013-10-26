@@ -131,7 +131,8 @@ add_action( 'wp_enqueue_scripts', 'hoho_scripts' );
  *
  * @since WordPress 2.2 (2.9.0: description プロパティ追加
  */
-register_sidebar( $args = array(
+register_sidebar(
+	array(
 		// サイドバーの名前、2つめの引数でテキストドメインを指定
 		'name'          => __( 'メインのサイドバー', 'テーマのテキストドメイン' ),
 		// サイドバー呼び出し用のID。小文字かつスペースは無きよう。
@@ -147,7 +148,8 @@ register_sidebar( $args = array(
 		// ウィジェットタイトルの前に配置する HTML
 		'before_title'  => '<h3 class="widgettitle">',
 		// ウィジェットタイトルの後に配置する HTML
-		'after_title'   => '</h3>' )
+		'after_title'   => '</h3>'
+	)
 );
 
 
