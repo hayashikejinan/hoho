@@ -14,10 +14,11 @@ get_header(); ?>
 
 		<?php get_template_part( 'inc/breadcrumbs' ); ?>
 
-		<article>
-			<section>
+		<article class="error404 hentry not-found">
+			<header>
 				<h1>Not found <span>:(</span></h1>
-
+			</header>
+			<section class="entry-content">
 				<p>申し訳ありませんが、あなたが表示しようとしたページは存在しません。</p>
 
 				<p>考えられる原因は:</p>
@@ -27,11 +28,13 @@ get_header(); ?>
 				</ul>
 				<p>です。</p>
 
+			</section>
+			<footer>
 				<h3>その他のヒント:</h3>
 
 				<?php get_search_form(); ?>
+			</footer>
 
-			</section>
 		</article>
 
 	</div>
