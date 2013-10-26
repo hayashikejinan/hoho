@@ -91,6 +91,15 @@
 
 				<?php if ( is_singular() ) : ?>
 
+					<?php wp_link_pages(
+						array(
+							'before'      => '<nav class="pagination">',
+							'after'       => '</nav>',
+							'link_before' => '<span>',
+							'link_after'  => '</span>',
+						)
+					); // 記事内ページャー?>
+
 					<?php
 					// タグをループで
 					$tags = get_the_tags();
