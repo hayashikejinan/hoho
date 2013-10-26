@@ -34,8 +34,11 @@
 					global $authordata;
 					echo sprintf(
 						'<a href="%1$s" title="%2$s" rel="author">%3$s</a>',
+						// %1$s = link
 						esc_url( get_author_posts_url( $authordata->ID, $authordata->user_nicename ) ),
+						// %2$s = title
 						esc_attr( sprintf( __( 'Posts by %s' ), get_the_author() ) ),
+						// %3$s = content
 						'<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">' .
 						get_the_author() . '</span></span>'
 					);

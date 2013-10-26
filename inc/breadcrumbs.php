@@ -19,7 +19,7 @@ $current_after  = '</span>';
 if ( ! is_home() && ! is_front_page() || is_paged() ) {
 	echo '<nav class="breadcrumbs" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">';
 	global $post;
-	$home = home_url();
+	$home = esc_url( home_url() );
 	echo '<a href="' . $home . '"><i class="fontawesome-home"></i></a> ' . $delimiter . ' ';
 
 	if ( is_category() ) {
