@@ -21,6 +21,12 @@
 					<a href="<?php the_permalink(); ?>" itemprop="url"><?php the_title(); ?></a>
 				</h1>
 
+				<a href="<?php the_permalink(); ?>">
+					<?php if ( has_post_thumbnail() ) {
+						the_post_thumbnail( 'large', array( 'class' => 'aligncenter' ) );
+					}; ?>
+				</a>
+
 				<?php if ( is_archive() || is_home() || is_single() ): ?>
 
 					<time itemprop="datePublished" datetime="<?php the_time( 'Y-m-d' ); ?>">
@@ -76,14 +82,6 @@
 					<?php get_template_part( 'template/content', 'after' ); ?>
 
 				<?php else: ?>
-
-					<?php
-					// アイキャッチが設定されているか確認
-					if ( has_post_thumbnail() ) {
-						// アイキャッチ画像を出力
-						the_post_thumbnail();
-					};
-					?>
 
 					<?php the_excerpt(); // 記事の抜粋を表示 ?>
 

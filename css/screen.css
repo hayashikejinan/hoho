@@ -401,6 +401,15 @@ a:hover img {
   padding-bottom: 10px;
 }
 
+.list-view .entry-content {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
 .pagination ul {
   padding: 0;
 }
@@ -692,6 +701,15 @@ a img.aligncenter {
   }
   .nav li:last-child a {
     margin-right: 0;
+  }
+
+  .list-view .entry-content {
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: relative;
+    width: 100%;
   }
 
   .hentry {
