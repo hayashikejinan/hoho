@@ -149,3 +149,25 @@ register_sidebar( $args = array(
 		// ウィジェットタイトルの後に配置する HTML
 		'after_title'   => '</h3>' )
 );
+
+
+/**
+ * WordPress デフォルトの body_class を拡張
+ *
+ * 振り分けるために body の class を追加:
+ * 1. 一覧
+ *
+ * @since 0.3
+ *
+ * @param array $classes A list of existing body class values.
+ *
+ * @return array The filtered body class list.
+ */
+function hoho_body_classes( $classes ) {
+	if ( is_archive() || is_search() || is_home() )
+		$classes[] = 'list-view';
+
+	return $classes;
+}
+
+add_filter( 'body_class', 'hoho_body_classes' );
