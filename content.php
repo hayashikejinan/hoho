@@ -91,14 +91,16 @@
 
 				<?php if ( is_singular() ) : ?>
 
-					<?php wp_link_pages(
+					<?php
+					// 記事内ページャー
+					wp_link_pages(
 						array(
 							'before'      => '<nav class="pagination">',
 							'after'       => '</nav>',
 							'link_before' => '<span>',
 							'link_after'  => '</span>',
 						)
-					); // 記事内ページャー?>
+					);?>
 
 					<?php
 					// タグをループで
