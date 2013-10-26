@@ -107,8 +107,9 @@ function hoho_scripts() {
 
 
 	// コメント用スクリプト
-	if ( is_singular() )
-		wp_enqueue_script( 'comment-reply' );
+	if ( class_exists( 'Jetpack' ) && ! Jetpack::is_module_active( 'comments' ) || ! function_exists( 'dsq_comment' ) )
+		if ( is_singular() )
+			wp_enqueue_script( 'comment-reply' );
 	// Modernizr ライブラリ
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', array(), '2.6.2' );
 	// レスポンシブメニュー
