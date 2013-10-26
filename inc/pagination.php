@@ -32,7 +32,7 @@ if ( ( $paged + 2 ) <= $max ) {
 	$links[] = $paged + 1;
 }
 
-echo '<nav class="pagination"><ul>' . "\n";
+echo '<nav class="pagination alignright"><ul>' . "\n";
 
 // 前のページへ
 if ( get_previous_posts_link() )
@@ -45,7 +45,7 @@ if ( ! in_array( 1, $links ) ) {
 	printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
 
 	if ( ! in_array( 2, $links ) )
-		echo '<li>…</li>';
+		echo '<li>…</li>' . "\n";
 }
 
 // 現在のページリンク、前後2ページを必要に応じて

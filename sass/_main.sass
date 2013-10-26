@@ -215,8 +215,6 @@ a:hover
 
 // ページネーション
 .pagination
-	float: right
-	padding: 0 0 15px
 
 	ul
 		padding: 0
@@ -224,38 +222,20 @@ a:hover
 	li
 		display: inline
 
-		a
-			color: $white
-			text-decoration: none
+	a
+		background-color: $base-color
+		color: $white
+		cursor: pointer
+		padding: 12px
+		text-decoration: none
 
-			&:hover
-				color: $white
-				text-decoration: none
+	a:hover,
+	.active a
+		background-color: $base-color-dark
 
-		&.active a,
-		&.disabled
-			color: $white
-			text-decoration: none
-
-		a
-			background: $base-color
-			cursor: pointer
-			padding: 12px
-
-			&:hover
-				background: $base-color-dark
-				cursor: pointer
-				padding: 12px
-
-		&.active a,
-		&.disabled
-			background: $base-color-dark
-			cursor: pointer
-			padding: 12px
-
-		a:hover,
-		&.active a
-			background-color: $base-color-dark
+	> span
+		border-bottom: 4px solid $base-color
+		padding: 8px
 
 /* =================
  *  MOBILE: Sidebar

@@ -394,45 +394,26 @@ a:hover img {
   padding-bottom: 10px;
 }
 
-.pagination {
-  float: right;
-  padding: 0 0 15px;
-}
 .pagination ul {
   padding: 0;
 }
 .pagination li {
   display: inline;
 }
-.pagination li a {
+.pagination a {
+  background-color: #f16529;
   color: white;
-  text-decoration: none;
-}
-.pagination li a:hover {
-  color: white;
-  text-decoration: none;
-}
-.pagination li.active a, .pagination li.disabled {
-  color: white;
-  text-decoration: none;
-}
-.pagination li a {
-  background: #f16529;
   cursor: pointer;
   padding: 12px;
+  text-decoration: none;
 }
-.pagination li a:hover {
-  background: #e44d26;
-  cursor: pointer;
-  padding: 12px;
-}
-.pagination li.active a, .pagination li.disabled {
-  background: #e44d26;
-  cursor: pointer;
-  padding: 12px;
-}
-.pagination li a:hover, .pagination li.active a {
+.pagination a:hover,
+.pagination .active a {
   background-color: #e44d26;
+}
+.pagination > span {
+  border-bottom: 4px solid #f16529;
+  padding: 8px;
 }
 
 /* =================
